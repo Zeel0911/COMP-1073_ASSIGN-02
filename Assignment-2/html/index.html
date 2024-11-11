@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Smoothie Order</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
 
@@ -19,21 +19,31 @@
       </select>
 
       <label for="ingredients">Choose your ingredients:</label>
-      <div id="ingredients">
-        <input type="checkbox" name="ingredient" value="banana" data-price="1.00">
-        <img src="images/banana.png" alt="Banana" class="ingredient-image"> Banana ($1.00)<br>
+      <div id="ingredients" class="ingredients-grid">
+        <div class="ingredient-item">
+          <input type="checkbox" name="ingredient" value="banana" data-price="1.00">
+          <img src="../img/image.jpeg" alt="Banana" class="ingredient-image"> Banana ($1.00)
+        </div>
         
-        <input type="checkbox" name="ingredient" value="strawberry" data-price="1.50">
-        <img src="images/strawberry.png" alt="Strawberry" class="ingredient-image"> Strawberry ($1.50)<br>
+        <div class="ingredient-item">
+          <input type="checkbox" name="ingredient" value="strawberry" data-price="1.50">
+          <img src="../img/image2.jpeg" alt="Strawberry" class="ingredient-image"> Strawberry ($1.50)
+        </div>
         
-        <input type="checkbox" name="ingredient" value="blueberry" data-price="1.50">
-        <img src="images/blueberry.png" alt="Blueberry" class="ingredient-image"> Blueberry ($1.50)<br>
+        <div class="ingredient-item">
+          <input type="checkbox" name="ingredient" value="blueberry" data-price="1.50">
+          <img src="../img/image3.jpeg" alt="Blueberry" class="ingredient-image"> Blueberry ($1.50)
+        </div>
         
-        <input type="checkbox" name="ingredient" value="spinach" data-price="0.75">
-        <img src="images/spinach.png" alt="Spinach" class="ingredient-image"> Spinach ($0.75)<br>
+        <div class="ingredient-item">
+          <input type="checkbox" name="ingredient" value="spinach" data-price="0.75">
+          <img src="../img/image4.jpeg" alt="Spinach" class="ingredient-image"> Spinach ($0.75)
+        </div>
         
-        <input type="checkbox" name="ingredient" value="peanut butter" data-price="1.25">
-        <img src="images/peanutbutter.png" alt="Peanut Butter" class="ingredient-image"> Peanut Butter ($1.25)<br>
+        <div class="ingredient-item">
+          <input type="checkbox" name="ingredient" value="peanut butter" data-price="1.25">
+          <img src="../img/image5.jpeg" alt="Peanut Butter" class="ingredient-image"> Peanut Butter ($1.25)
+        </div>
       </div>
 
       <label for="size">Smoothie Size:</label>
@@ -49,6 +59,6 @@
     <div id="output"></div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="../js/script.js"></script>
 </body>
 </html>
