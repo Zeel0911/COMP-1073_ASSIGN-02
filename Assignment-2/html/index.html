@@ -14,26 +14,33 @@
       <label for="base">Choose your base:</label>
       <select id="base" name="base">
         <option value="almond milk">Almond Milk</option>
-        <option value="oatmeal milk">Oatmeal milk</option>
+        <option value="coconut water">Coconut Water</option>
         <option value="yogurt">Yogurt</option>
       </select>
 
       <label for="ingredients">Choose your ingredients:</label>
       <div id="ingredients">
-        <input type="checkbox" name="ingredient" value="banana" data-price="1.00"> Banana ($1.00)<br>
-        <input type="checkbox" name="ingredient" value="strawberry" data-price="1.50"> Strawberry ($1.50)<br>
-        <input type="checkbox" name="ingredient" value="blueberry" data-price="1.50"> Blueberry ($1.50)<br>
-        <input type="checkbox" name="ingredient" value="blackberry" data-price="1.75"> Spinach ($1.75)<br>
-        <input type="checkbox" name="ingredient" value="peanut butter" data-price="1.25"> Peanut Butter ($1.25)<br>
-        <input type="checkbox" name="ingredient" value="peaches" data-price="1.25"> Peaches ($1.25)<br>
+        <input type="checkbox" name="ingredient" value="banana" data-price="1.00">
+        <img src="images/banana.png" alt="Banana" class="ingredient-image"> Banana ($1.00)<br>
+        
+        <input type="checkbox" name="ingredient" value="strawberry" data-price="1.50">
+        <img src="images/strawberry.png" alt="Strawberry" class="ingredient-image"> Strawberry ($1.50)<br>
+        
+        <input type="checkbox" name="ingredient" value="blueberry" data-price="1.50">
+        <img src="images/blueberry.png" alt="Blueberry" class="ingredient-image"> Blueberry ($1.50)<br>
+        
+        <input type="checkbox" name="ingredient" value="spinach" data-price="0.75">
+        <img src="images/spinach.png" alt="Spinach" class="ingredient-image"> Spinach ($0.75)<br>
+        
+        <input type="checkbox" name="ingredient" value="peanut butter" data-price="1.25">
+        <img src="images/peanutbutter.png" alt="Peanut Butter" class="ingredient-image"> Peanut Butter ($1.25)<br>
       </div>
 
       <label for="size">Smoothie Size:</label>
       <select id="size" name="size">
-        <option value="small" data-price="2.25">Small ($2.25)</option>
-        <option value="medium" data-price="3.50">Medium ($3.50)</option>
-        <option value="large" data-price="5.50">Large ($5.50)</option>
-        <option value="xtra large" data-price="6.25">Large ($6.25)</option>
+        <option value="small" data-price="3.00">Small ($3.00)</option>
+        <option value="medium" data-price="4.50">Medium ($4.50)</option>
+        <option value="large" data-price="6.00">Large ($6.00)</option>
       </select>
 
       <button type="button" onclick="orderSmoothie()">Order</button>
